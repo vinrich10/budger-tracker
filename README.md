@@ -1,19 +1,10 @@
 # Budget Tracker
-Track your workouts daily!
+Keep track of your budget daily!
 
+This app is designed for users to keep better track of their budget.
+<br>
+The app was created using HTML, CSS, Express, Javascript, Mongoose and MongoDB. 
 
-# Installation
-Clone this repo to your local device
-<br>
-Install the necessary dependencies by using command 'npm Install'
-<br>
-Run MongoDB with command `mongo`
-<br>
-Seed the database with `node seeders/seed.js`
-<br>
-Run the local server using `node server.js`
-<br>
-Finally use localhost:3001 in your browser.
 
 
 # License
