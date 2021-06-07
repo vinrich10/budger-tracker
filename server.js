@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect("mongodb+srv://vinrich:test123@cluster0.hwtuw.mongodb.net/testretryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
@@ -23,6 +23,10 @@ mongoose.connect("mongodb://localhost/budget", {
 // routes
 app.use(require("./routes/api.js"));
 
-app.listen(PORT, () => {
+  let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
   console.log(`App running on port ${PORT}!`);
 });
